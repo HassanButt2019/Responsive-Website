@@ -13,6 +13,7 @@
     position: sticky;
     top: 0;
     cursor: pointer;
+    
 }
 .logo
 {
@@ -29,7 +30,7 @@
 }
 .nav-list
 {
-    width: 50%;
+    width: 70%;
     display: flex;
     align-items: center;
 }
@@ -43,6 +44,7 @@
 {
     text-decoration: none;
     color: white;
+    font-family: 'Ubuntu', sans-serif;;
 }
 .nav-list li a:hover
 {
@@ -51,7 +53,7 @@
 }
 .rightnav
 {
-    width: 50%;
+    width: 30%;
     text-align: right;
     padding: 0 23px;
 }
@@ -137,7 +139,6 @@
 }
 .section
 {
-    height: 500px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -181,7 +182,7 @@
 }
 .form
 {
-    max-width: 500px;
+    max-width: 62%;
     margin: 43px auto;
 }
 .form-style
@@ -192,4 +193,85 @@
     font-size: 19px;
     border: 2px solid black;
     border-radius: 6px ;
+}
+.text-footer
+{
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;;
+    font-size: 25px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+.burger
+{
+    display: none;
+    position:absolute;
+    cursor: pointer;
+    right:5%;
+    top:15px;
+}
+.line
+{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 5px;;
+}
+@media only screen and (max-width: 1140px)
+{
+    .nav-list
+    {
+        flex-direction: column;
+    }
+    .navbar
+    {
+        flex-direction: column;
+        transition:  all 0.7s ease-out;
+        height: 500px;
+    }
+    .box-main
+    {
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+    .rightnav
+    {
+        text-align: center;
+    }
+    #search
+    {
+        width: 100%;
+    }
+    .burger
+    {
+        display: block;
+    }
+    .h-nav
+    {
+        height: 72px;
+    }
+    .v-class
+    {
+        opacity: 0;
+    }
+    .section
+    {
+        flex-direction: column-reverse;
+    }
+    .text-big
+    {
+        text-align: center;
+    }
+    .text-small
+    {
+        text-align: center;
+    }
+    .btn
+    {
+        text-align: center;
+    }
+    
 }
